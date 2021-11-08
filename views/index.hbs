@@ -1,0 +1,44 @@
+<nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Weblify</a>
+
+    </div>
+</nav>
+
+
+<h1>Create your site without Code</h1>
+
+<form action="/" method="post">
+    <label>Do you need NavBar? </label>
+
+    <div class="form-check form-switch">
+        <input class="form-check-input" onclick="navbartoggle()" type="checkbox" name="navbar" id="flexSwitchCheckDefault">
+    </div>
+    <div id="navbar-content" style="display: none;">
+        <input type="text" placeholder="TyPE YOUR heADING ? " name="heading">
+        <input type="text" placeholder="colour" name="color">
+        <input type="text" placeholder="4 small li tags" name="li1">
+        <input type="text" placeholder="4 small li tags" name="li2">
+        <input type="text" placeholder="4 small li tags" name="li3">
+        <input type="text" placeholder="4 small li tags" name="li4">
+    </div>
+
+    <label>Do you need Form? </label>
+
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" name="form" id="flexSwitchCheckDefault">
+    </div>
+
+    <button type="submit">See The Site</button>
+</form>
+
+<script>
+ function navbartoggle() {
+  var x = document.getElementById("navbar-content");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>

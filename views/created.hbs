@@ -1,0 +1,42 @@
+
+<div class="container">
+
+{{#if code.navbar}}
+<nav class="navbar navbar-{{data.navbar.color}} bg-{{data.navbar.color}} fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">{{data.navbar.heading}}</a>
+    <div class="items">
+      <a href="{{data.navbar.a1}}">{{data.navbar.li1}}</a>
+      <a href="{{data.navbar.a2}}">{{data.navbar.li2}}</a>
+      <a href="{{data.navbar.a3}}">{{data.navbar.li3}}</a>
+      <a href="{{data.navbar.a4}}">{{data.navbar.li4}}</a>
+    </div>
+    </div>
+
+  </nav>
+
+  {{/if}}
+
+{{#if code.form}}
+
+<form action="/" method="post">
+    <label>Do you need NavBar? </label>
+
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" name="navbar" id="flexSwitchCheckDefault">
+    </div>
+
+    <button type="submit">See The Site</button>
+</form>
+
+{{/if}}
+
+</div>
+
+<style>
+  .items a,.items a:hover {
+    margin-right: 22px;
+    text-decoration: none;
+  }
+</style>
+
